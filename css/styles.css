@@ -16,18 +16,6 @@ body {
   min-height: 100%;
 }
 
-span {
-  border: 1px solid rgba(230, 230, 230, 0.411);
-  background: #fff;
-  display: block;
-  height: 20px;
-  width: 20px;
-}
-
-span.activate {
-  background: #333;
-}
-
 .outline {
   background: #E50003;
   border: 3em solid #E50003;
@@ -62,5 +50,17 @@ span.activate {
   position: relative;
   width: 800px;
   z-index: 2;
+}
+
+.outline .grid span {
+  border: 1px solid rgba(230, 230, 230, 0.411);
+  background: #fff;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.outline .grid span.activate {
+  background: #333;
 }
 /*# sourceMappingURL=styles.css.map */
