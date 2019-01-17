@@ -1,3 +1,5 @@
+$clr-red: #E50003;
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -16,7 +18,7 @@ body {
 
 .outline {
    background: #E50003;
-   border: 3em solid #E50003;
+   border: 3em solid $clr-red;
    box-shadow: 1px 1px 10px rgba(224, 224, 224, 0.219);
    border-radius: 1em;
    text-align: center;
@@ -52,6 +54,42 @@ body {
          &.activate {
             background: #333;
          }
+
       }
+   }
+}
+
+#buttons {
+   display: flex;
+
+   position: fixed;
+   bottom: 1em;
+   left: 1em;
+
+   button,
+   input {
+      border: 0;
+      border-radius: .25em;
+      color: #fff;
+      cursor: pointer;
+      margin: 0 .5em;
+      padding: .75em;
+   }
+
+   button {
+      background: $clr-red;
+
+      transition: all 300ms ease;
+
+      &:hover {
+         background: lighten($clr-red, 10);
+      }
+   }
+
+   input {
+      display: block;
+      padding: .5em;
+      width: 2.5em;
+      height: 2.5em;
    }
 }
