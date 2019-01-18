@@ -19,7 +19,7 @@ const playgroundLoaded = () => {
 
    // Color the screen when mouseover
    grid.addEventListener('mouseover', (e) => {
-      if (e.target.nodeName === 'SPAN') {
+      if ((e.target.nodeName === 'SPAN') && !(e.target.classList.contains('activate'))) {
          e.target.classList.add('activate');
       }
    });
